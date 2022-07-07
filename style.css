@@ -1,0 +1,1398 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+}
+
+.frontPage {
+    /* background-color: cornflowerblue; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* sliding image */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slide-image {
+    width: 100%;
+    height: 35rem;
+    overflow: hidden;
+
+}
+
+
+
+.bottons {
+    position: relative;
+    bottom: 20px;
+    left: 42%;
+    display: flex;
+}
+
+.btn {
+    border: 2px solid rgb(8, 8, 8);
+    height: 16px;
+    margin: 5px;
+    width: 77px;
+}
+
+.btn:hover {
+    background-color: aliceblue;
+}
+
+.first-btn:hover {
+    background-color: azure;
+}
+
+.slider {
+    width: 200%;
+    height: 100%;
+    display: flex;
+
+}
+
+.image {
+    width: 50%;
+    height: 100%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+}
+
+input[name="same"] {
+    visibility: hidden;
+    position: absolute;
+}
+
+#i1:checked~.s1 {
+    margin-left: 0px;
+}
+
+#i2:checked~.s2 {
+    margin-left: -50%;
+}
+
+/* sliding image */
+/* Content of heading like picture or school name */
+.header {
+    height: 321px;
+    /* padding: 2rem; */
+    /* border: 2px solid black; */
+}
+
+.topHeader {
+    margin-top: 0px;
+    /* border: 1px solid blue; */
+    height: 155px;
+    /* background-color: #6344eb; */
+    display: flex;
+}
+
+
+
+.sNameCOntianer {
+    width: 100%;
+}
+
+.sLogo {
+    /* border: 1px solid; */
+    margin-left: 3rem;
+    height: 100%;
+    width: 21%;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+.sName {
+    font-family: fangsong;
+    font-size: 58px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sAddress {
+    font-size: 39px;
+    text-align: center;
+}
+
+.headerSchoolImg {
+    height: 323px;
+    width: 100%;
+}
+
+/* Main page means navi and page */
+.mainPage {
+    /* background-color: brown; */
+    /* border: 2px solid red; */
+    display: flex;
+
+}
+
+/* Side navigation bar */
+.navi {
+    width: 15rem;
+    /* height: 100%; */
+    /* height:100rem; */
+    /* border: 2px solid blue; */
+    background-color: rgb(49, 47, 104);
+    transition: transform 0.3s ease-in;
+    position: fixed;
+
+}
+
+.navi ul li {
+    list-style: none;
+    padding-left: 4.5rem;
+    padding-top: 60px;
+    border: 1px solid white;
+    padding-bottom: 2rem;
+    cursor: pointer;
+    transition: 0.2s;
+    user-select: none;
+
+}
+
+.navi ul li a {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.navi ul li:hover {
+    padding-left: 5rem;
+    border: 1px solid rgb(1, 2, 10);
+}
+
+/* menu and the cross for side bar */
+.naviLost {
+    transform: translate(-445px, 0px);
+    position: absolute;
+}
+
+.menuCross {
+    /* position: absolute; */
+    position: fixed;
+    left: 10px;
+    cursor: pointer;
+
+}
+
+.menu {
+    width: 25px;
+    margin-top: 8px;
+}
+
+.cross {
+    width: 25px;
+    margin-left: 251px;
+    margin-top: 7px;
+}
+
+/* Content of the page */
+.page {
+    width: 100%;
+    /* border: 2px solid green; */
+    background-color: #e9e9f7;
+
+}
+
+/* .space{
+    height: 15px;
+    background-color: aqua;
+    position: sticky;
+} */
+.homeContent {
+    margin-top: 209px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.school {
+    /* border: 1px solid gray; */
+}
+
+/* images of school */
+
+/* images of school */
+.welcome {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2rem;
+
+
+}
+
+.schoolName {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.6rem;
+    margin-top: 5px;
+}
+
+.schoolImage {
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 100%;
+}
+
+.schoolContent {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 49px;
+}
+
+
+/* Style for about us page */
+.aboutusContent {
+    margin-top: 209px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+
+}
+
+.aboutusText {
+    /* border: 2px solid pink; */
+    height: 20rem;
+}
+
+.introductionText {
+    font-family: system-ui;
+    font-size: 35px;
+    border-bottom: 1px solid #cfbfbf;
+    margin-top: 34px;
+}
+
+.introductuionContent {
+    margin-top: 20px;
+}
+
+.i {
+    margin-top: 20px;
+}
+
+.rulesAndRegulationContent {}
+
+/* style for admission page */
+.admission-available{
+
+}
+.admissionContent {
+    margin-top: 209px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.admissionContentText {
+    /* border: 1px solid red; */
+    height: 20rem;
+}
+
+.admission {
+    margin-top: 4rem;
+}
+
+.classNine {
+    margin-top: 1rem;
+}
+
+.admissionForm {
+    margin-top: 1rem;
+}
+
+.admissionForm a {
+    text-decoration: none;
+    color: blue;
+    margin-left: 1rem;
+    border: 1px solid grey;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+}
+
+/* style for admission form */
+.formContent {
+    margin: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formSchoolName {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.formAddress {
+    text-align: center;
+    font-size: 24px;
+}
+
+.formView {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+/* name of student */
+.studentNameContainer {
+    margin-top: 4rem;
+}
+
+.formTitle {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.nameBox {
+    margin-top: 10px;
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 297px;
+    cursor: pointer;
+}
+
+.lastName {
+    margin-top: 10px;
+}
+
+.dobContainer {
+    margin-top: 2rem;
+}
+
+.dob {
+    margin-bottom: 15px;
+}
+
+.nepaliDob {
+    /* margin-top: 10px; */
+    padding: 3px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 297px;
+    cursor: pointer;
+}
+
+.dobs {
+    margin-top: 12px;
+}
+
+.genderTitle {
+    margin-top: 34px;
+}
+
+.gb {
+    margin-right: 15px;
+}
+
+.addressTitle {
+    margin-top: 31px;
+}
+
+.addressBox {
+    margin-top: 0px;
+}
+
+.gradeTitle {
+    margin-top: 31px;
+}
+
+.gradeBox {
+    margin-top: 0px;
+}
+
+.lastSchoolTitle {
+    margin-top: 31px;
+}
+
+.fat {
+    margin-top: 10px;
+}
+
+.admissionInfo {
+    margin-top: 20px;
+}
+
+.submitBotton {
+    margin-top: 30px;
+}
+
+.submitBox {
+    width: 7rem;
+    height: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.submitBox:hover {
+    background-color: blue;
+    color: aliceblue;
+}
+
+.sentedInfo {
+    margin-top: 20px;
+}
+
+.sentedInfo p {
+    margin-top: 10px;
+}
+
+/* style for staffs  */
+.staffsContainer {
+    margin-top: 209px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.staffsPosition {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2rem;
+    margin-top: 3rem;
+    border-bottom: 1px solid #e1c5c5;
+}
+
+.staffsName {
+    margin-top: 1rem;
+}
+
+/* style for contact  */
+.frontPage {
+    /* background-color: cornflowerblue; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.contactContainer {
+    margin-top: 209px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    ;
+}
+
+.contact {
+    border: 2px solid pink;
+    height: 20rem;
+}
+
+.contactTitle {
+    margin-top: 40px;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #d3bebe;
+}
+
+.contactName {}
+
+.contactImages {
+    width: 33px;
+}
+
+.s {
+    width: 23px;
+}
+
+.fbImage {
+    margin-left: 7px;
+    width: 17px;
+    margin-right: 7px;
+}
+
+.instaIm {
+    width: 29px;
+}
+
+.contactN {
+    margin-top: 40px;
+}
+
+.messageBox {
+    width: 25rem;
+    padding: 10px;
+}
+
+.sbox {
+    margin-top: 1rem;
+}
+
+
+/* style for facilities page */
+
+.facilitiesContainer {
+    margin-top: 209px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.imageWithTitle {
+    /* border: 2px solid pink; */
+    height: 20rem;
+    margin: 0px;
+}
+
+.contentContainer {
+    margin: 40px;
+}
+
+.libraryTitle {
+    font-family: system-ui;
+    font-size: 33px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #cfbfbf;
+}
+
+
+.imageLibrary {
+    width: 100%;
+    height: 100%;
+}
+
+.libraryImg {
+    height: 35rem;
+}
+
+.libraryContent {
+    margin-top: 44px;
+}
+
+
+
+
+/* style for principlr message */
+.principle-title {
+    margin-top: 50px;
+    font-size: 37px;
+}
+
+.principle-message {
+    /* background-color: red; */
+    margin-top: 20px;
+    border: 2px solid #6a6abd;
+    /* margin-top: 57px; */
+    /* margin: auto; */
+}
+
+.principle-image {
+    width: 17%;
+    margin: auto;
+    padding-top: 14px;
+}
+
+.principle-name {
+    text-align: center;
+    font-size: 30px;
+}
+
+.image-principle {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #704040;
+}
+
+.principle-content {
+    padding: 56px;
+}
+
+/* style for principlr message */
+
+/* style for responsive nes */
+@media screen and (max-width:1560px) {
+    .navi ul li {
+
+        padding-top: 46px;
+
+    }
+
+    .cross {
+        width: 31px;
+        margin-left: 246px;
+        margin-top: 7px;
+    }
+
+    .introductionText {
+        border-bottom: 1px solid #cfbfbf;
+    }
+
+    .frontPage {
+        /* background-color: cornflowerblue; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .frontPage {
+        /* background-color: cornflowerblue; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+
+    .introductionText {
+        border-bottom: 1px solid #cfbfbf;
+    }
+
+    .sName {
+
+        font-size: 50px;
+
+        font-weight: 600;
+    }
+
+    .sAddress {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .welcome {
+        font-size: 34px;
+    }
+
+    .schoolName {
+        font-size: 2.2rem;
+        margin-top: 5px;
+    }
+
+    .cross {
+        width: 32px;
+        margin-left: 245px;
+        margin-top: 7px;
+    }
+}
+
+@media screen and (max-width:888px) {
+
+    .frontPage {
+        /* background-color: cornflowerblue; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+
+    .principle-content {
+
+        padding: 34px;
+    }
+
+    .sName {
+        font-size: 38px;
+        margin-top: 12px;
+    }
+
+    .sAddress {
+        font-size: 27px;
+
+    }
+
+    /* .navi {
+        width: 13rem;
+    } */
+    .cross {
+        width: 32px;
+        margin-left: 184px;
+    }
+
+    * {
+        font-size: 15px;
+    }
+
+    .welcome {
+        font-size: 26px;
+    }
+
+    .schoolName {
+        font-size: 30px;
+    }
+
+    .principle-title {
+
+        font-size: 26px;
+    }
+
+    .principle-name {
+
+        font-size: 21px;
+    }
+
+    .navi ul li {
+        padding-bottom: 3.2rem;
+    }
+
+    .navi ul li a {
+        font-size: 21px;
+    }
+
+    .introductionText {
+        border-bottom: 1px solid #cfbfbf;
+        font-size: 25px;
+    }
+
+    .libraryTitle {
+        font-size: 25px;
+    }
+
+    .staffsPosition {
+        font-size: 25px;
+    }
+
+    .contactTitle {
+        font-size: 25px;
+    }
+
+    .btn {
+        border: 2px solid rgb(8, 8, 8);
+        height: 16px;
+        margin: 5px;
+        width: 57px;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .frontPage {
+        /* background-color: cornflowerblue; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+    .sName {
+        font-size: 32px;
+    }
+
+    .sAddress {
+        font-size: 21px;
+    }
+
+    .topHeader {
+        height: 100px;
+    }
+
+    .headerSchoolImg {
+        height: 249px;
+    }
+
+    .homeContent {
+        margin-top: 70px;
+    }
+
+    .welcome {
+        font-size: 22px;
+    }
+
+    .schoolName {
+        font-size: 27px;
+    }
+
+    .slide-image {
+        height: 29rem;
+    }
+
+    .aboutusContent {
+        margin-top: 70px;
+    }
+
+    .admissionContent {
+        margin-top: 70px;
+    }
+
+    .facilitiesContainer {
+        margin-top: 70px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .libraryImg {
+        height: 26rem;
+    }
+
+    .staffsContainer {
+        margin-top: 70px;
+    }
+
+    .contactContainer {
+        margin-top: 70px;
+    }
+
+    .introductionText {
+        font-size: 22px;
+        border-bottom: 1px solid #cfbfbf;
+
+    }
+
+    .libraryTitle {
+        font-size: 22px;
+    }
+
+    .staffsPosition {
+        font-size: 22px;
+    }
+
+    .contactTitle {
+        font-size: 22px;
+    }
+
+    .principle-content {
+        padding: 21px;
+    }
+}
+
+@media screen and (max-width:625px) {
+    .frontPage {
+        /* background-color: cornflowerblue; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+    .s {
+        width: 18px;
+    }
+
+    .contactImages {
+        width: 24px;
+    }
+
+    .fbImage {
+        width: 12px;
+    }
+
+    .instaIm {
+        width: 22px;
+    }
+
+    .schoolContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 17px;
+    }
+
+    .welcome {
+        font-size: 18px;
+    }
+
+    .schoolName {
+        font-size: 22px;
+    }
+
+    .sName {
+        font-size: 22px;
+    }
+
+    .sAddress {
+        font-size: 19px;
+    }
+
+    .headerSchoolImg {
+        height: 207px;
+    }
+
+    .aboutusContent {
+        margin-top: 0px;
+    }
+
+    .admissionContent {
+        margin-top: 0px;
+    }
+
+    .facilitiesContainer {
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .homeContent {
+        margin-top: 0px;
+    }
+
+    .staffsContainer {
+        margin-top: 0px;
+    }
+
+    .contactContainer {
+        margin-top: 0px;
+    }
+
+    .introductionText {
+        border-bottom: 1px solid #cfbfbf;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .frontPage {
+        /* background-color: cornflowerblue; */
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 100%;
+    }
+    .topHeader {
+        height: 72px;
+    }
+
+    .headerSchoolImg {
+        height: 162px;
+    }
+
+    .aboutusContent {
+        margin-top: -113px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .admissionContent {
+        margin-top: -113px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .facilitiesContainer {
+        margin-top: -113px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .homeContent {
+        margin-top: -77px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .staffsContainer {
+        margin-top: -113px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .contactContainer {
+        margin-top: -113px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .introductionText {
+        font-size: 17px;
+    }
+
+    .libraryTitle {
+        font-size: 17px;
+    }
+
+    .staffsPosition {
+        font-size: 17px;
+    }
+
+    .contactTitle {
+        font-size: 17px;
+    }
+
+    .principle-title {
+        font-size: 18px;
+    }
+
+    .principle-name {
+        font-size: 16px;
+    }
+
+    * {
+        font-size: 13px;
+    }
+
+    .bottons {
+        left: 37%;
+    }
+
+    .navi ul li a {
+        font-size: 18px;
+    }
+
+    .cross {
+        margin-left: 154px;
+        margin-top: 6px;
+        width: 27px;
+    }
+
+    .formSchoolName {
+        font-size: 22px;
+    }
+
+    .formAddress {
+        font-size: 20px;
+    }
+
+    .formView {
+        font-size: 22px;
+    }
+
+    .slide-image {
+        height: 23rem;
+    }
+
+    .libraryImg {
+        height: 23rem;
+    }
+
+    .navi ul li {
+        padding-bottom: 3.6rem;
+    }
+
+    .btn {
+        width: 45px;
+    }
+
+    .navi ul li {
+        padding-bottom: 50px;
+    }
+
+    .menu {
+        width: 19px;
+        margin-top: 8px;
+    }
+
+    .menu {
+        width: 19px;
+        margin-top: 8px;
+        margin-left: -8px;
+    }
+
+    .schoolContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 11px;
+    }
+
+    .contentContainer {
+        margin: 26px;
+    }
+}
+
+@media screen and (max-width:464px) {
+    .navi {
+        width: 14rem;
+    }
+
+    .cross {
+        margin-left: 142px;
+    }
+
+    .schoolContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 11px;
+    }
+}
+
+@media screen and (max-width:464px) {
+    .sName {
+        font-size: 22px;
+    }
+
+    .sAddress {
+        font-size: 16px;
+    }
+
+    .schoolContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 11px;
+    }
+
+}
+
+@media screen and (max-width:440px) {
+    .schoolContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 14px;
+    }
+
+    .sName {
+        font-size: 18px;
+    }
+
+    .sAddress {
+        font-size: 13px;
+    }
+
+    .headerSchoolImg {
+        height: 131px;
+    }
+
+    .homeContent {
+        margin-top: -114px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .aboutusContent {
+        margin-top: -145px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .admissionContent {
+        margin-top: -145px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .facilitiesContainer {
+        margin-top: -145px;
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .staffsContainer {
+        margin-top: -145px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .contactContainer {
+        margin-top: -145px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    .btn {
+        width: 38px;
+    }
+
+    .bottons {
+        left: 44%;
+    }
+
+    .slide-image {
+        height: 16rem;
+    }
+
+    .libraryImg {
+        height: 16rem;
+    }
+
+    .welcome {
+        font-size: 14px;
+    }
+
+    .schoolName {
+        font-size: 17px;
+    }
+
+    * {
+        font-size: 11px;
+    }
+
+    .principle-title {
+        font-size: 15px;
+    }
+
+    .navi ul li a {
+        font-size: 15px;
+    }
+
+    .cross {
+        margin-left: 113px;
+    }
+
+    .introductionText {
+        font-size: 15px;
+    }
+
+    .libraryTitle {
+        font-size: 15px;
+    }
+
+    .staffsPosition {
+        font-size: 15px;
+    }
+
+    .contactTitle {
+        font-size: 15px;
+    }
+
+    .principle-title {
+        font-size: 15px;
+    }
+
+    .menu {
+        width: 19px;
+        margin-top: 8px;
+        margin-left: -6px;
+    }
+}
+
+@media screen and (max-width:348px) {
+    .btn {
+        width: 29px;
+    }
+
+    .bottons {
+        left: 46%;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .principle-content {
+        padding: 8px;
+    }
+
+    .topHeader {
+        height: 67px;
+    }
+
+    .sAddress {
+        font-size: 11px;
+    }
+
+    .sName {
+        font-size: 15px;
+    }
+
+    .headerSchoolImg {
+        height: 112px;
+    }
+
+    .schoolName {
+        font-size: 14px;
+    }
+
+    .welcome {
+        font-size: 13px;
+    }
+
+    * {
+        font-size: 9px;
+    }
+
+    .schoolContent {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
+    }
+
+    .introductionText {
+        font-size: 14px;
+        border-bottom: 1px solid #cfbfbf;
+
+    }
+
+    .libraryTitle {
+        font-size: 14px;
+    }
+
+    .staffsPosition {
+        font-size: 14px;
+    }
+
+    .contactTitle {
+        font-size: 14px;
+    }
+
+    .navi ul li a {
+        font-size: 13px;
+    }
+
+    .navi ul li {
+        padding-bottom: 53px;
+        padding-left: 3.5rem;
+    }
+
+    .cross {
+        margin-left: 92px;
+        width: 23px;
+    }
+
+    .menu {
+        width: 16px;
+        margin-left: -9px;
+    }
+
+    .homeContent {
+        margin-top: -114px;
+        margin-left: 19px;
+        margin-right: 19px;
+        ;
+    }
+
+    .aboutusContent {
+        margin-top: -145px;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .admissionContent {
+        margin-top: -145px;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .facilitiesContainer {
+        margin-top: -145px;
+        /* margin-left: 24px;
+        margin-right: 24px; */
+        margin-left: -7px;
+        */ margin-right: -7px;
+    }
+
+    .staffsContainer {
+        margin-top: -145px;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+
+    .contactContainer {
+        margin-top: -145px;
+        margin-left: 19px;
+        margin-right: 19px;
+    }
+}
+
+
+@media screen and (max-width:220px) {
+    .frontPage {
+        width: 106%;
+
+    }
+
+    .nameBox {
+        width: 225px;
+    }
+}
+ @media screen and (max-width:196px) {
+    .frontPage {
+        width: 116%;
+
+    }
+
+}
+ @media screen and (max-width:192px) {
+    .frontPage {
+        width: 127%;
+
+    }
+
+} 
+@media screen and (max-width:180px) {
+
+    .frontPage {
+        width: 152%;
+
+    }
+
+    .nameBox {
+        width: 205px;
+    }
+
+    .messageBox {
+        width: 23rem;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:152px) {
+    .frontPage {
+        width: 166%;
+
+    }
+
+} 
+/* style for responsive nes */

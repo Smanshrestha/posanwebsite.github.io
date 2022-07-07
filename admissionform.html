@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/css/nepali.datepicker.v3.7.min.css"
+        rel="stylesheet" type="text/css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="formContent">
+        <div class="formHeader">
+            <div class="formSchoolName">
+                Shree Pashupati Secondary School
+            </div>
+            <div class="formAddress">
+                Bahrsdashi-3 Rajgadh (Jhapa)
+            </div>
+            <div class="formView">
+                Online Admission Form
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <div class="studentNameContainer">
+                    <div class="studentName formTitle">Student name</div>
+                    <div class="firstName">First name :</div>
+                    <input class="nameBox" type="text" required>
+
+                    <div class="lastName">Last name :</div>
+                    <input class="nameBox" type="text" required>
+                </div>
+                <div class="dobContainer ">
+                    <div class="dob formTitle">Date of birth (A.D.)</div>
+                    <input class="nameBox dobBox" type="date" required>
+
+                    <div class="dobs formTitle">Date of birth (B.S.)</div>
+                    <input class="nepaliDob" type="text" id="nepali-datepicker">
+
+                </div>
+                <div class="gendercontainer">
+                    <div class="formTitle genderTitle">Gender</div>
+                    <label for="male">Male </label>
+                    <input class="genderBox gb" type="radio" name="gender">
+                    <label for="male">Female </label>
+                    <input class="genderBox gb" type="radio" name="gender">
+                    <label for="male">Others </label>
+                    <input class="genderBox" type="radio" name="gender">
+                </div>
+                <div class="addressContainer">
+                    <div class="addressTitle formTitle">Address</div>
+                    <input class="addressBox nameBox" type="text" required>
+                </div>
+                <div class="gradeContainer">
+                    <div class="gradeTitle formTitle">Admission for grade </div>
+                    <select class="nameBox gradeBox" name="" id="">
+                        <option value="">Grade 1</option>
+                        <option value="">Grade 2</option>
+                        <option value="">Grade 3</option>
+                        <option value="">Grade 4</option>
+                        <option value="">Grade 5</option>
+                        <option value="">Grade 6</option>
+                        <option value="">Grade 7</option>
+                        <option value="">Grade 8</option>
+                        <option value="">Grade 9</option>
+                        <option value="">Grade 9(CE)</option>
+                        <option value="">Grade 11(Commerse)</option>
+                        <option value="">Grade 11(Arts)</option>
+                        <option value="">Grade 11(CE)</option>
+                        <option value="">Grade 11(Education)</option>
+                    </select>
+                </div>
+                <div class="lastSchoolContainer">
+                    <div class="lastSchoolTitle formTitle">Name of the school last attended</div>
+                    <input class="addressBox nameBox" type="text" required>
+                </div>
+                <div class="fatherDetails">
+                    <div class="lastSchoolTitle formTitle">Father's information</div>
+                    <div class="fatherName">Full name :</div>
+                    <input  class="nameBox" type="text" required>
+                    <div class="mblNum fat">Phone number :</div>
+                    <input  class="nameBox" type="text" required>
+                    <div class="officeName fat">Office name :</div>
+                    <input type="text" class="nameBox">
+                    <div class="officeMbl fat">Office phone number :</div>
+                    <input type="text" class="nameBox">
+                    <div class="fatherEmail fat">Email :</div>
+                    <input type="text" class="nameBox">
+                    <div class="occupation fat">Occupation :</div>
+                    <input type="text" class="nameBox">
+                </div>
+                <div class="fatherDetails">
+                    <div class="lastSchoolTitle formTitle">Mother's information</div>
+                    <div class="fatherName">Full name :</div>
+                    <input  class="nameBox" type="text" required>
+                    <div class="mblNum fat">Phone number :</div>
+                    <input  class="nameBox" type="text" required>
+                    <div class="officeName fat">Office name :</div>
+                    <input type="text" class="nameBox">
+                    <div class="officeMbl fat">Office phone number :</div>
+                    <input type="text" class="nameBox">
+                    <div class="fatherEmail fat">Email :</div>
+                    <input type="text" class="nameBox">
+                    <div class="occupation fat">Occupation :</div>
+                    <input type="text" class="nameBox">
+                </div>
+                <div class="fatherDetails">
+                    <div class="lastSchoolTitle formTitle">Guardian/Contact Person</div>
+                    <div class="fatherName">Full name :</div>
+                    <input  class="nameBox" type="text">
+                    <div class="mblNum fat">Phone number :</div>
+                    <input  class="nameBox" type="text">
+                    <div class="officeName fat">Office name :</div>
+                    <input type="text" class="nameBox">
+                    <div class="officeMbl fat">Office phone number :</div>
+                    <input type="text" class="nameBox">
+                    <div class="fatherEmail fat">Email :</div>
+                    <input type="text" class="nameBox">
+                    <div class="occupation fat">Occupation :</div>
+                    <input type="text" class="nameBox">
+                </div>
+                <div class="admissionInfo">
+                    Your further details will be taken through email. We sent a link to your email where you 
+                    need to send photo of birth certificate,mark sheet ,transfer certificate and payment of registration 
+                    and other fees .
+                </div>
+                <div class="submitBotton">
+                    <input type="submit" class="submitBox">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- for nepali date -->
+    <script src="http://nepalidatepicker.sajanmaharjan.com.np/nepali.datepicker/js/nepali.datepicker.v3.7.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            var mainInput = document.getElementById("nepali-datepicker");
+            mainInput.nepaliDatePicker();
+        };
+    </script>
+</body>
+
+</html>

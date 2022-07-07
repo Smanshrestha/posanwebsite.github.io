@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image slider</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .slide-image {
+            width: 700px;
+            height: 600px;
+            overflow: hidden;
+        }
+
+        .image-slide {
+            position: absolute;
+        }
+
+        .bottons {
+            position: absolute;
+            bottom: 20px;
+            left: 42%;
+            display: flex;
+        }
+
+        .btn {
+            border: 2px solid rgb(12, 10, 10);
+            height: 10px;
+            margin: 5px;
+            width: 50px;
+        }
+        .btn:hover{
+            background-color: aliceblue;
+        }
+        .first-btn:hover{
+            background-color: azure;
+        }
+        .slider {
+            width: 200%;
+            height: 100%;
+            display: flex;
+
+        }
+
+        .image {
+            width: 50%;
+            height: 100%;
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%;
+        }
+
+        input[name="same"] {
+            visibility: hidden;
+            position: absolute;
+        }
+
+        #i1:checked~.s1 {
+            margin-left: 0px;
+        }
+
+        #i2:checked~.s2 {
+            margin-left: -50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slide-image image-slide">
+        <div class="slider">
+            <input type="radio" name="same" id="i1" checked>
+            <input type="radio" name="same" id="i2">
+            <div class="image s1">
+                <img src="school1.jpeg" alt="">
+            </div>
+            <div class="image s2">
+                <img src="school2.jpeg" alt="">
+            </div>
+
+        </div>
+        <div class="bottons">
+        
+                <label for="i1" class="btn"></label>
+         
+       
+                <label for="i2" class="btn"></label>
+           
+        </div>
+    </div>
+</body>
+
+</html>
